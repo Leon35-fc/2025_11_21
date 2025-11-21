@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 
 function MyNavbar() {
   return (
-     <Navbar bg="dark" data-bs-theme="dark" >
+     <Navbar bg="dark" data-bs-theme="dark" ckassName='mt-0'>
         <Container className='mx-0 my-1' fluid>
         <Row className="align-items-center justify-content-start">
         <Col xs={1}>
