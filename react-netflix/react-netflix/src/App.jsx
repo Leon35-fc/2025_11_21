@@ -11,7 +11,7 @@ function App() {
     <>
       <MyNavbar/>
       {/* <Gallery/> */}
-      <GalleriaProva/>
+      {/* <GalleriaProva/> */}
       <Footer/>
     </>
   )
