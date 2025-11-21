@@ -1,0 +1,16 @@
+footer i
+{
+    color: #838383;
+}
+
+footer a, 
+footer p, 
+footer button
+{
+    font-size: 0.8em;
+    color: #838383;
+}
+
+footer p {
+    font-size: 0.73em;
+}
