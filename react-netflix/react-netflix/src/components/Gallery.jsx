@@ -41,7 +41,7 @@ class Gallery extends Component {
 
         return (
             <>
-                <p className="fs-4 text-white mb-2 mt-5">{this.props.barTitle}</p>
+                <h4 className="fs-4 text-white mb-0 mt-4">{this.props.galleryTitle}</h4>
                 {/* <Carousel>
                     {films.map (film => (
                         <CarouselItem key={film.imdbID}>
@@ -49,25 +49,25 @@ class Gallery extends Component {
                         </CarouselItem>
                     ))}
                 </Carousel> */}
-                <Container>
-                    <Row>
+                <Container fluid={true} className="p-4">
+                    <Row justify='center' space="around" className="d-flex flex-grow-1 overflow-hidden">
                         <Col xs={2}>
-                            {films[0] && <img src={films[0].Poster} alt={films[0].Title} className="img-fluid rounded-2 me-2 mb-2"/>}
+                            {films[0] && <img src={films[0].Poster} alt={films[0].Title} className="img-fluid rounded-2 me-2 mb-0 w-75"/>}
                         </Col>
                         <Col xs={2}>
-                            {films[1] && <img src={films[1].Poster} alt={films[1].Title} className="img-fluid rounded-2 me-2 mb-2"/>}
+                            {films[1] && <img src={films[1].Poster} alt={films[1].Title} className="img-fluid rounded-2 me-2 mb-2 w-75"/>}
                         </Col>
                         <Col xs={2}>
-                            {films[2] && <img src={films[2].Poster} alt={films[2].Title} className="img-fluid rounded-2 me-2 mb-2"/>}
+                            {films[2] && <img src={films[2].Poster} alt={films[2].Title} className="img-fluid rounded-2 me-2 mb-2 w-75"/>}
                         </Col>
                         <Col xs={2}>    
-                            {films[3] && <img src={films[3].Poster} alt={films[3].Title} className="img-fluid rounded-2 me-2 mb-2"/>}
+                            {films[3] && <img src={films[3].Poster} alt={films[3].Title} className="img-fluid rounded-2 me-2 mb-2 w-75"/>}
                         </Col>
                         <Col xs={2}>
-                            {films[4] && <img src={films[4].Poster} alt={films[4].Title} className="img-fluid rounded-2 me-2 mb-2"/>}
+                            {films[4] && <img src={films[4].Poster} alt={films[4].Title} className="img-fluid rounded-2 me-2 mb-2 w-75"/>}
                         </Col>
                         <Col xs={2}>
-                            {films[5] && <img src={films[5].Poster} alt={films[5].Title} className="img-fluid rounded-2 me-2 mb-2"/>}   
+                            {films[5] && <img src={films[5].Poster} alt={films[5].Title} className="img-fluid rounded-2 me-2 mb-2 w-75"/>}
                         </Col>
                     </Row>
                 </Container>

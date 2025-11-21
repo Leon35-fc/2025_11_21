@@ -2,7 +2,7 @@ import {Row, Col, Button} from 'react-bootstrap'
 
 function Footer() { 
  return(
-    <footer className="bg-dark text-info text-start pt-5">
+    <footer className="bg-dark text-info text-start pt-5 mt-4">
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Row align="start" className='mb-3'>
@@ -31,11 +31,10 @@ function Footer() {
         <Row>
             {/* <Col><button type="button" className='btn btn-outline-info rounded-0 px-2 my-3'>Service Code</button></Col> */}
             <Col><Button variant="outline-info" className='rounded-0 px-2 my-3' style={{
-                                                                                        '--bs-btn-color': '#838383',
-                                                                                        '--bs-btn-border-color': '#838383',
-                                                                                        '--bs-btn-hover-bg': 'transparent',
-                                                                                        '--bs-btn-hover-color': '#fff',
-                                                                                        '--bs-btn-hover-border-color': 'transparent'
+                                                                                    '--bs-btn-color': '#838383',
+                                                                                    '--bs-btn-hover-bg': 'transparent',
+                                                                                    '--bs-btn-hover-color': '#fff',
+                                                                                    '--bs-btn-hover-border-color': 'transparent'
       }}>Service Code</Button></Col>
         </Row>
         <Row>

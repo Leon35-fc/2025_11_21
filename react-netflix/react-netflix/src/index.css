@@ -1,3 +1,20 @@
+i{
+    color: #f5f5f1;
+}
+
+#dropdown-basic-button.btn{
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-color: dark;
+    --bs-btn-border-color: #838383;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: trasparent;
+    --bs-btn-hover-bg: dark;
+    --bs-btn-hover-color: dark;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-border-color: white;
+}
+
 footer i
 {
     color: #838383;
@@ -14,3 +31,14 @@ footer button
 footer p {
     font-size: 0.73em;
 }
+
+.col-2 img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+/* .btn-custom {
+    background-color: #e50914;
+    color: white;
+--bs-btn-border-radius: 0;
+} */
