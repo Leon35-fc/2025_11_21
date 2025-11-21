@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Carousel, CarouselCaption, CarouselItem} from "react-bootstrap";
 
-const URL = 'https://www.omdbapi.com/?apikey=caefe34f&s=Star%20Wars'
+const URL = 'https://www.omdbapi.com/?apikey=caefe34f&s=Scrubs'
 
 const dbFilms = []
 
@@ -41,13 +41,13 @@ class Gallery extends Component {
         return (
             <>
                 <p>{this.props.barTitle}</p>
-                <Carousel>
+                {/* <Carousel>
                     {films.map (film => (
                         <CarouselItem key={film.imdbID}>
                             <img src={film.Poster} alt={film.Title} />
                         </CarouselItem>
                     ))}
-                </Carousel>
+                </Carousel> */}
             </>
         )
     }
