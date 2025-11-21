@@ -40,7 +40,7 @@ class Gallery extends Component {
 
         return (
             <>
-                <p>SONO LA GALLERIA DI FILM</p>
+                <p>{this.props.barTitle}</p>
                 <Carousel>
                     {films.map (film => (
                         <CarouselItem key={film.imdbID}>

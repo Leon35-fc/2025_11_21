@@ -4,13 +4,14 @@ import MyNavbar from './components/MyNavbar.jsx'
 import Footer from './components/Footer.jsx'
 import Gallery from './components/Gallery.jsx'
 import GalleriaProva from './components/GalleriaProva.jsx'
+import ContainerGallery from './components/ContainerGallery.jsx'
 
 function App() {
   
   return (
     <>
       <MyNavbar/>
-      {/* <Gallery/> */}
+      <ContainerGalleryGallery/>
       {/* <GalleriaProva/> */}
       <Footer/>
     </>
