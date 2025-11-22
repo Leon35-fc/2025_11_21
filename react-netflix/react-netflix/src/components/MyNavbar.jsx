@@ -3,11 +3,11 @@ import logo from '../assets/logo.png'
 
 function MyNavbar() {
   return (
-     <Navbar data-bs-theme="dark">
-        <Container className='mx-0 my-1' fluid>
+     <Navbar data-bs-theme="dark" className='pt-2'>
+        <Container className='mx-2 my-1' fluid>
         <Row className="align-items-center justify-content-start">
         <Col xs={1}>
-          <Navbar.Brand href="#home"><img src={logo} width="80%" alt="Logo"/></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={logo} width="70%" alt="Logo"/></Navbar.Brand>
         </Col>
         <Col xs={10}>
           <Nav className="me-auto fw-bold">
