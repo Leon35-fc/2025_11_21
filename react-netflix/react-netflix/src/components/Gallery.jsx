@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import { Carousel, CarouselCaption, CarouselItem, Container, Row, Col} from "react-bootstrap";
 
-const URL = 'https://www.omdbapi.com/?apikey=caefe34f&s=Star%20Wars&type=movie'
-
+// const URL = 'https://www.omdbapi.com/?apikey=caefe34f&s=Star%20Wars&type=movie'
 const dbFilms = []
 
 class Gallery extends Component {
 
+    search=encodeURIComponent(this.props.searchFilm) //convert to URL encoding -> converts spaces to %20
+    URL = `https://www.omdbapi.com/?apikey=caefe34f&s=${this.search}&type=movie`
     state = {
     films: [],
     isLoading: true,
-    error: null
+    error: null,
   }
     filmFetch () {
-        fetch (URL)
+        fetch (this.URL)
         .then ((response) => {
                     if (response.ok) {
                         return response.json()
@@ -33,6 +34,13 @@ class Gallery extends Component {
 
     componentDidMount () {
         this.filmFetch()
+    }
+
+        componentDidUpdate (prevProps) {
+        if (this.props.searchFilm !== prevProps.searchFilm) {
+            this.filmFetch()
+            prevProps.searchFilm = this.props.searchFilm
+        }
     }
 
     render() {

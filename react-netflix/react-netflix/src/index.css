@@ -2,17 +2,27 @@ i{
     color: #f5f5f1;
 }
 
+.btn:first-child:active{
+    border-color: transparent !important;
+}
+
 #dropdown-basic-button.btn{
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
     --bs-btn-color: dark;
     --bs-btn-border-color: #838383;
     --bs-btn-active-bg: transparent;
-    --bs-btn-active-border-color: trasparent;
+    --bs-btn-active-border-color: white;
     --bs-btn-hover-bg: dark;
     --bs-btn-hover-color: dark;
     --bs-btn-border-radius: 0;
     --bs-btn-hover-border-color: white;
+}
+
+.btn.btn-sm.text-white.show.dropdown{
+    /* --bs-btn-border-color: transparent; */
+    --bs-btn-active-border-color: transparent;
+
 }
 
 footer i
@@ -33,12 +43,6 @@ footer p {
 }
 
 .col-2 img:hover {
-    transform: scale(1.2);
-    transition: transform 0.2s;
+    transform: scale(1.1);
+    transition: transform 0.17s;
 }
-
-/* .btn-custom {
-    background-color: #e50914;
-    color: white;
---bs-btn-border-radius: 0;
-} */
