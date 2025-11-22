@@ -2,7 +2,7 @@ import {Row, Col, Button} from 'react-bootstrap'
 
 function Footer() { 
  return(
-    <footer className="bg-dark text-info text-start pt-5">
+    <footer className="text-info text-start pt-5">
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Row align="start" className='mb-3'>

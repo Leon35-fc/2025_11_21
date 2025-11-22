@@ -3,15 +3,15 @@ import logo from '../assets/logo.png'
 
 function MyNavbar() {
   return (
-     <Navbar bg="dark" data-bs-theme="dark">
+     <Navbar data-bs-theme="dark">
         <Container className='mx-0 my-1' fluid>
         <Row className="align-items-center justify-content-start">
         <Col xs={1}>
-          <Navbar.Brand href="#home"><img src={logo} width="90%" alt="Logo"/></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={logo} width="80%" alt="Logo"/></Navbar.Brand>
         </Col>
         <Col xs={10}>
           <Nav className="me-auto fw-bold">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home" active>Home</Nav.Link>
             <Nav.Link href="#tvshows">TV Shows</Nav.Link>
             <Nav.Link href="#movies">Movies</Nav.Link>
             <Nav.Link href="#recently">Recently Added</Nav.Link>

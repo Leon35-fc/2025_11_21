@@ -3,8 +3,8 @@ import Gallery from "./Gallery";
 
 function ContainerGallery() {
   return (
-    <>
-    <div className="bg-dark container-fluid py-5 px-3">
+    <main>
+    <div className="container-fluid pb-5 px-3">
     <Container fluid={true} className="mb-4">
         <Row>
             <Col xs={1} justify="middle">
@@ -17,17 +17,17 @@ function ContainerGallery() {
                         <DropdownItem href="#thriller">Thriller</DropdownItem>
                         </DropdownButton>
             </Col>
-            <Col xs={10} className="d-flex justify-content-end align-items-center gap-5">
-            <i className="bi bi-grid fs-3"></i>
-            <i className="bi bi-grid-3x3 fs-3"></i>
+            <Col xs={10} className="d-flex justify-content-end align-items-center gap-4">
+            <i className="bi bi-grid fs-5"></i>
+            <i className="bi bi-grid-3x3 fs-5"></i>
             </Col>
         </Row>
       <Gallery galleryTitle="Trending Now" searchFilm="Star Wars" />
       <Gallery galleryTitle="Watch Again" searchFilm="The Matrix" />
-      <Gallery galleryTitle="New Releases" searchFilm="Lord of the Rings" />
+      <Gallery galleryTitle="New Releases" searchFilm="Spider-Man" />
     </Container>
     </div>
-    </>
+    </main>
   );
 }
 

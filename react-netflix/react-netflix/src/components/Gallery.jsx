@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Carousel, CarouselCaption, CarouselItem, Container, Row, Col} from "react-bootstrap";
 
 // const URL = 'https://www.omdbapi.com/?apikey=caefe34f&s=Star%20Wars&type=movie'
-const dbFilms = []
+// const dbFilms = []
 
 class Gallery extends Component {
 
@@ -13,7 +13,8 @@ class Gallery extends Component {
     isLoading: true,
     error: null,
   }
-    filmFetch () {
+ 
+ filmFetch () {
         fetch (this.URL)
         .then ((response) => {
                     if (response.ok) {
@@ -27,7 +28,7 @@ class Gallery extends Component {
             // data.Search.map (film => dbFilms.push (film))
             this.setState({ films: data.Search, isLoading: false })
             console.log ('FILM in this.state.films', this.state.films)
-            console.log ('FILM in dbFilms', dbFilms)
+            // console.log ('FILM in dbFilms', dbFilms)
         })
         .catch (error => console.error ("Fetch error: ", error))
     }
@@ -36,15 +37,16 @@ class Gallery extends Component {
         this.filmFetch()
     }
 
-        componentDidUpdate (prevProps) {
+    componentDidUpdate (prevProps) {
+        console.log ('Gallery Updated', this.props.searchFilm, prevProps.searchFilm)
         if (this.props.searchFilm !== prevProps.searchFilm) {
             this.filmFetch()
             prevProps.searchFilm = this.props.searchFilm
         }
     }
-
+    
     render() {
-
+        
         const { films } = this.state
 
         return (
