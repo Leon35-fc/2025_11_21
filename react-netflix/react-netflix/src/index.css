@@ -16,6 +16,7 @@ i{
     border-color: transparent !important;
 }
 
+
 #dropdown-basic-button.btn{
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.25rem;
@@ -32,7 +33,6 @@ i{
 .btn.btn-sm.text-white.show.dropdown{
     /* --bs-btn-border-color: transparent; */
     --bs-btn-active-border-color: transparent;
-
 }
 
 /*FOOTER*/
